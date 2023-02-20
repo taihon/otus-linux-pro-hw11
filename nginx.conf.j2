@@ -1,0 +1,7 @@
+server {
+  listen {{ hostvars[inventory_hostname]["nginx_listen_on"] }}; 
+  server_name web.app;
+  location / {
+    root /var/www/data;
+  }
+}

@@ -1,0 +1,9 @@
+<html>
+<body>
+    <h1>Hello from {{ hostvars[inventory_hostname]["inventory_hostname"] }}</h1>
+    <pre>
+        This text is built from template.
+        Oh, by the way - we're listening on {{hostvars[inventory_hostname]["nginx_listen_on"]}}
+    </pre>
+</body>
+</html>
